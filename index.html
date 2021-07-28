@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <span class="u">U</span>
+                <span class="z">Z</span>
+                <span class="j">Z</span>
+                <span class="a">A</span>
+                <span class="l">L</span>
+            </div>
+            <nav>
+                <ul id="menuItem">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Protfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" class="menuIcon" onclick="toggle()">
+        </div>
+    </div>
+
+
+
+
+    <script>
+         const menuItem = document.getElementById("menuItem");
+         menuItem.style.maxHeight = "0px";
+
+         function toggle() {
+             if(menuItem.style.maxHeight == "0px"){
+                menuItem.style.maxHeight = "200px";
+             }
+             else{
+                menuItem.style.maxHeight = "0px";
+             }
+         }
+    </script>
+
+
+
+</body>
+
+</html>
